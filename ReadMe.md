@@ -28,3 +28,6 @@ Samnang Chhun
 * Be a person who opens to learn a new thing.
 * A laptop to hack on exercises together.(optional)
 * Questions and discussion are welcome.(No student/teacher style)
+
+## Go further
+* [Ruby Mendicant University(RbMU)](http://university.rubymendicant.com/)
