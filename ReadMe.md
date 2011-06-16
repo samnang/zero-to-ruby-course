@@ -11,9 +11,9 @@ FREE! I hope this course will help to build community.
 * Using and extending the interactive Ruby shell(irb)
 * Using Ruby's documentation
 * Ruby Core
-* Blocks
 * Classes and Modules
 * Understanding Ruby's method lookup
+* Blocks
 * Duck Typing and Monkey Patching
 * Basic metaprogramming & Domain Specific Language(DSL)
 * Code Reading (optional)
