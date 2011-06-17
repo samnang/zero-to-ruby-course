@@ -1,0 +1,597 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Zero to Ruby</title>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+    setupPreso(false, './');
+  });
+  </script>
+</head>
+
+<body>
+
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">&larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">z</td><td>toggle help (this)</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content title center" ref="title/slide/1">
+<h1>Zero to Ruby</h1>
+
+<h3>Samnang Chhun</h3>
+
+<h4>@samnangchhun</h4></div>
+</div><div class="slide" data-transition="none"><div class="content about_me" ref="title/slide/2">
+<pre class="sh_ruby"><code>:about_me =&gt; {
+  :name =&gt; "Samnang Chhun",
+  :work_at =&gt; ["Yoolk Inc.", "Freelancer"],
+  :website =&gt; "http://wowkhmer.com",
+  :email =&gt; "samnang.chhun@gmail.com",
+  :twitter =&gt; "@samnangchhun",
+  :certificattions =&gt; ["MCTS"],
+  :communities =&gt; [
+    "Ruby Mendicant University",
+    "RubyLearning",
+    "ShareVisionTeam",
+    "Pailin"
+  ]
+}</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content try_ruby" ref="title/slide/3">
+<h1>http://tryruby.org</h1>
+
+<p class="notes">let students test with code snippets on http://tryruby.org</p>
+
+<pre class="sh_ruby"><code>"I love Ruby" * 5
+
+5.times { puts "I love Ruby" }
+
+[1, 3, "samnang"].last.capitalize</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content why_ruby bullets" ref="title/slide/4">
+<h1>Why Ruby?</h1>
+
+<ul>
+<li>Because Matz loves Ruby :-)</li>
+<li>Dynamically typed language</li>
+<li>An 100% OO language (well, 99.9%)</li>
+<li>Concise. Simple. Fun!</li>
+<li>Open source</li>
+<li>Ruby makes developers have fun.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content ruby_implementations bullets" ref="installation/slide/1">
+<h1>Ruby Implementations</h1>
+
+<ul>
+<li>MRI, YARV</li>
+<li>JRuby</li>
+<li>Rubinius</li>
+<li>IronRuby</li>
+<li>MacRuby</li>
+<li>etc.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content installation bullets" ref="installation/slide/2">
+<h1>Installation</h1>
+
+<h2>Linux/MacOS X</h2>
+
+<ul>
+<li><a href="RVM:%20Ruby%20Version%20Manager%20-%20RVM%20Ruby%20Version%20Manager%20-%20Documentation">RVM</a></li>
+</ul>
+
+
+<h2>Windows</h2>
+
+<ul>
+<li><a href="http://rubyinstaller.org/">RubyInstaller</a>, <a href="http://railsinstaller.org/">RailsInstaller</a>, <a href="https://github.com/vertiginous/pik">Pik</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content ruby_version commandline incremental small" ref="installation/slide/3">
+<h1>Ruby version</h1>
+
+<pre><code><code class="command">$ ruby -v</code><code class="result">
+  ruby 1.9.2p180 (2011-02-18 revision 30909) [x86_64-darwin10.7.0]
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content irb commandline incremental" ref="irb/slide/1">
+<h1>Interactive Ruby Shell</h1>
+
+<pre><code><code class="command">$ irb</code><code class="result">
+ruby-1.9.2-p180 :001 &gt; puts "I love Ruby!"
+I love Ruby!
+ =&gt; nil
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content test_codes_in_irb" ref="irb/slide/2">
+<p class="notes">let students test codes in irb</p>
+
+<pre class="sh_ruby"><code>"I love Ruby" * 5
+
+5.times { puts "I love Ruby" }
+
+[1, 3, "samnang"].last.capitalize</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content configure_irb bullets" ref="irb/slide/3">
+<h1>Configure and extend irb</h1>
+
+<ul>
+<li><strong>.irbrc</strong> irb's configration</li>
+<li>Auto completion</li>
+<li>Simple Mode</li>
+<li>plugins or gems(looksee, interactive_editor, ...)</li>
+<li>Customize by yourself</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content using_documentation bullets" ref="irb/slide/4">
+<h1>Using Ruby's documentation</h1>
+
+<ul>
+<li><a href="http://rubydoc.info/stdlib">http://rubydoc.info/stdlib</a></li>
+<li><a href="http://apidock.com/ruby/">http://apidock.com/ruby/</a></li>
+<li>ri (Ruby Index)</li>
+<li>irb (sometimes it helps as well)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content ruby_core subsection" ref="ruby_core/slide/1">
+<h1>Ruby Core</h1></div>
+</div><div class="slide" data-transition="none"><div class="content Simplicity" ref="ruby_core/slide/2">
+<h1>Simplicity</h1>
+
+<pre class="sh_ruby"><code>5.times { print "Ruby! "}
+print "Ruby! " * 5
+
+100.next
+'a'.next
+
+1.upto(5) {|x| puts x }
+5.downto(1) { |x| puts x }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content everything_is_object" ref="ruby_core/slide/3">
+<h1>Almost everything in Ruby is an object</h1>
+
+<pre class="sh_ruby"><code>100.next     #=&gt; 101
+'a'.next     #=&gt; "b"
+
+100.class    #=&gt; Fixnum
+"Ruby".class #=&gt; String
+[].class     #=&gt; Array
+{}.class     #=&gt; Hash
+
+5.times { print "Ruby! " }
+#=&gt; Ruby! Ruby! Ruby! Ruby! Ruby!
+
+5 + 5
+5.+(5) # both are the same</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content array" ref="ruby_core/slide/4">
+<h1>Array</h1>
+
+<pre class="sh_ruby"><code>numbers = ['zero', 'one', 'two', 3]
+numbers[0]      #=&gt; 'zero'
+numbers.first   #=&gt; 'zero'
+numbers.last    #=&gt; 3
+numbers[-1]     #=&gt; 3
+
+list = []
+list &lt;&lt; 'first'
+list &lt;&lt; 'bar'
+list.pop # can be used as a stack</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content hash" ref="ruby_core/slide/5">
+<h1>Hash</h1>
+
+<pre class="sh_ruby"><code>profile = {
+  :name =&gt; "Samnang",
+  :age =&gt; 100 #Who knows :-)
+}
+
+profile[:name]
+profile[:age]</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content range" ref="ruby_core/slide/6">
+<h1>Range</h1>
+
+<pre class="sh_ruby"><code>range = 1..5
+range.to_a        #=&gt; [1, 2, 3, 4, 5]
+
+range = 'a'..'z'
+range.to_a # array of strings from a to z
+
+range = 1...5
+range.to_a        #=&gt; [1, 2, 3, 4]
+
+range.include? 2  #=&gt; true
+
+array = [1, 2, 3, 4]
+array[0..2]       #=&gt; [1, 2, 3]
+array[1...-1]     #=&gt; [2, 3]</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content conditional_and_iterators" ref="ruby_core/slide/7">
+<h1>Conditionals and Iterators</h1>
+
+<pre class="sh_ruby"><code>if something_true?
+    do_something
+else
+    do_another_thing
+end
+
+puts "I'll love Ruby" if not absence_today?
+puts "I'll love Ruby" unless absence_today?
+
+%w{Ruby HTML5 CSS3}.each do |lang|
+    puts "#{lang} is so cool!"
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content ruby_core_and_stdlib bullets center" ref="ruby_core/slide/8">
+<h1>Ruby package</h1>
+
+<p class="notes">see some classes on both ruby core and standard library</p>
+
+<h3>Ruby Core Classes</h3>
+
+<p>(String, Fixnum, Array, ...)</p>
+
+<h3>Ruby Standard Library</h3>
+
+<p>(CSV, ERB, Webrick, ...)</p></div>
+</div><div class="slide" data-transition="none"><div class="content exercise title" ref="ruby_core/slide/9">
+<h1>Exercise</h1></div>
+</div><div class="slide" data-transition="none"><div class="content ruby_object_model subsection" ref="classes_and_modules/slide/1">
+<h1>Ruby Object Model</h1></div>
+</div><div class="slide" data-transition="none"><div class="content classes smaller" ref="classes_and_modules/slide/2">
+<h1>Classes</h1>
+
+<pre class="sh_ruby"><code>class BankAccount
+  attr_accessor :name, :account_no
+  attr_reader :balance
+
+  def initialize(name)
+    @name = name
+    @balance = 0
+  end
+
+  def deposit(amount)
+    @balance += amount
+  end
+
+  def withdraw(amount)
+    @balance += amount
+  end
+
+  def active?
+    #is account active or not
+  end
+end
+
+account = BankAccount.new("Samnang")</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content inheritance" ref="classes_and_modules/slide/3">
+<h1>Inheritance</h1>
+
+<pre class="sh_ruby"><code>class Animal
+  # ...
+end
+
+class Cat &lt; Animal
+  # ....
+end
+
+class Dog &lt; Animal
+  # ...
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content mixins small" ref="classes_and_modules/slide/4">
+<h1>Mixins</h1>
+
+<pre class="sh_ruby"><code>module A
+  def say_hello
+    puts "Hello"
+  end
+end
+
+module B
+  def say_goodbye
+    puts "Goodbye"
+  end
+end
+
+class C
+  include A
+  include B
+end
+
+obj = C.new
+obj.say_hello
+obj.say_goodbye</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content namespace" ref="classes_and_modules/slide/5">
+<h1>Namespaces</h1>
+
+<pre class="sh_ruby"><code>module XML
+  class Parser
+    # ...
+  end
+end
+
+module PDF
+  class Parser
+    # ...
+  end
+end
+
+XML::Parser
+PDF::Parser</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content singleton_method smaller" ref="classes_and_modules/slide/6">
+<h1>Singleton Methods</h1>
+
+<pre class="sh_ruby"><code>animal = "cat"
+another_aminal = "dog"
+
+def animal.speak
+  puts "The #{self} says miaow"
+end
+
+an_array.speak # The cat says miaow
+another_animal.speak 
+# NoMethodError: undefined method `speak' for "dog":String</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content object_model center" ref="classes_and_modules/slide/7">
+<h1>Object model for a basic class</h1>
+
+<p><img src="file:///Volumes/Documents/Work/Personal/zero-to-ruby-course/classes_and_modules/object_model_for_a_basic_class.png" alt="Object model for a basic class"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content singleton_class center" ref="classes_and_modules/slide/8">
+<h1>Singleton class involved</h1>
+
+<p><img src="file:///Volumes/Documents/Work/Personal/zero-to-ruby-course/classes_and_modules/singleton_class.png" alt="Singleton class"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content what_is_single_class bullets center" ref="classes_and_modules/slide/9">
+<p class="notes">demo how to access singleton class in Ruby 1.8 and Ruby 1.9</p>
+
+<h1>Singleton classes</h1>
+
+<p>(Eigenclasses/Metaclasses/Virtual Classes/Ghost classes)</p>
+
+<ul>
+<li>It's an anonymous class that you can't instantiate object from it</li>
+<li>It's hidden</li>
+<li>It is created automatically by the interpreter when you refer to it at the first time</li>
+<li>Except from those above, it works like normal classes
+Picture of the singleton class</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content self bullets" ref="method_lookup/slide/1">
+<h1>self (current object)</h1>
+
+<ul>
+<li>Read-only variable</li>
+<li>Has 2 significant roles in a running Ruby program:<br/>
+<strong>self</strong> controls how Ruby finds instance variables.<br/>
+<strong>self</strong> plays a vital role in method calling.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content method_lookup bullets" ref="method_lookup/slide/2">
+<h1>Understanding Ruby's method lookup</h1>
+
+<ul>
+<li>Find out what is <strong>self</strong> in current line of executing program</li>
+<li>Ruby methods are looked up in the following order:</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content method_lookup_process bullets small" ref="method_lookup/slide/3">
+<h1>Ruby methods are looked up in the following order</h1>
+
+<ul>
+<li>Methods defined in the object's singleton class (i.e. the object itself)</li>
+<li>Modules mixed into the singleton class in reverse order of inclusion</li>
+<li>Methods defined by the object's class</li>
+<li>Modules included into the object's class in reverse order of inclusion</li>
+<li>Methods defined by the object's superclass.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content example" ref="method_lookup/slide/4">
+<h1>Example</h1></div>
+</div><div class="slide" data-transition="none"><div class="content duck_typing center" ref="duck_typing/slide/1">
+<h1>Duck Typing</h1>
+
+<h2>If it walks like a duck, and talks like a duck,Then we can treat it like a duck. (who cares what it really is)</h2>
+
+<p><img src="file:///Volumes/Documents/Work/Personal/zero-to-ruby-course/duck_typing/duck.jpeg" alt="Duck Typing"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content duck_typing bullets" ref="duck_typing/slide/2">
+<h1>Duck Typing</h1>
+
+<ul>
+<li>In Ruby, we rely less on the type (or class) of an object and more on its capabilities.</li>
+<li>Duck Typing means an object type is defined by what it can do, not by what it is.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content duck_typing_sample_code small" ref="duck_typing/slide/3">
+<pre class="sh_ruby"><code>class Dock
+  def quack
+    puts "Quack!"
+  end
+end
+
+class DuckRecording  
+  def quack  
+    play  
+  end  
+
+  def play  
+    'Quack!'  
+  end  
+end
+
+[Duck.new, DuckRecording.new].each { |a| a.quack }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content monkey_patching bullets" ref="monkey_patching/slide/1">
+<h1>Monkey Patching</h1>
+
+<ul>
+<li>Objects and class are open:<br/>
+add / override method to object even at Runtime!</li>
+<li>Might be dangerous or break some stuff:<br/>
+but its awesome</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content monkey_patching small" ref="monkey_patching/slide/2">
+<pre class="sh_ruby"><code>class Array
+  def second
+    self[0]
+  end
+end
+
+[1, 2, 3].second # =&gt; 2
+
+require 'active_support/core_ext'
+
+2.days.from_now # =&gt; 2011-06-20 14:14:11 +0700
+"person".pluralize # =&gt; "people"</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content basic_metaprogramming_and_dsl subsection" ref="basic_metaprogramming_and_dsl/slide/1">
+<h1>Basic metaprogramming and DSL</h1></div>
+</div><div class="slide" data-transition="none"><div class="content metaprogramming bullets" ref="basic_metaprogramming_and_dsl/slide/2">
+<h1>Metaprogramming</h1>
+
+<ul>
+<li><strong>Wikipedia</strong>: "Metaprogramming is the writing of computer programs that write or manipulate other programs (or themselves) as their data, or that do part of the work at compile time that would otherwise be done at runtime."</li>
+<li>Code that writes code.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content metaprogramming_sample" ref="basic_metaprogramming_and_dsl/slide/3">
+<h1>Example</h1>
+
+<pre class="sh_ruby"><code>class Person
+  attr_accessor :name, :age
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content metaprogramming_sample1 small" ref="basic_metaprogramming_and_dsl/slide/4">
+<h1>Getters and Setters from Java style</h1>
+
+<pre class="sh_ruby"><code>class Person
+  def name
+    @name
+  end
+
+  def name=(value)
+    @name = value
+  end
+
+  def age
+    @age
+  end
+
+  def age=(value)
+    @age = value
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content metaprogramming_sample2 small" ref="basic_metaprogramming_and_dsl/slide/5">
+<h1>Then change it into</h1>
+
+<pre class="sh_ruby"><code>class Person
+  %w(name age).each do |method_name|
+    define_method(method_name) do
+      instance_variable_get("@#{method_name}")
+    end
+
+    define_method("#{method_name}=") do |value|
+      instance_variable_set("@#{method_name}", value)
+    end
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content metaprogramming_sample3" ref="basic_metaprogramming_and_dsl/slide/6">
+<h1>Finally</h1>
+
+<pre class="sh_ruby"><code>class Person
+  attr_accessor :name, :age
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content dsl center small" ref="basic_metaprogramming_and_dsl/slide/7">
+<h1>Domain Specific Language(DSL)</h1>
+
+<h2><strong>Martin Fowler</strong>: The basic idea of a domain specific language (DSL) is a computer language that's targeted to a particular kind of problem, rather than a general purpose language that's aimed at any kind of software problem. Domain specific languages have been talked about, and used for almost as long as computing has been done.</h2></div>
+</div><div class="slide" data-transition="none"><div class="content two_kinds_of_dsl" ref="basic_metaprogramming_and_dsl/slide/8">
+<h1>Two kinds of DSL</h1>
+
+<h2>Internal DSL</h2>
+
+<h3>use a host language to give the host language the feel of a particular language.</h3>
+
+<h2>External DSL</h2>
+
+<h3>have their own custom syntax and you write a full parser to process them.</h3></div>
+</div><div class="slide" data-transition="none"><div class="content internal_dsl bullets" ref="basic_metaprogramming_and_dsl/slide/9">
+<p class="notes">demo some codes</p>
+
+<h1>Examples of internal DSL</h1>
+
+<ul>
+<li>RSpec</li>
+<li>Capybara</li>
+<li>Sinatra</li>
+<li>...</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content external_dsl_bullets bullets" ref="basic_metaprogramming_and_dsl/slide/10">
+<h1>Examples of external DSL</h1>
+
+<ul>
+<li>Cucumber</li>
+<li>Haml</li>
+<li>SQL</li>
+<li>CSS</li>
+<li>...</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content exercise" ref="basic_metaprogramming_and_dsl/slide/11">
+<h1>Exercise</h1></div>
+</div><div class="slide" data-transition="none"><div class="content conclusion subsection" ref="conclusion/slide/1">
+<h1>Conslusion</h1></div>
+</div><div class="slide" data-transition="none"><div class="content rubykoans" ref="conclusion/slide/2">
+<h1>Ruby Koans</h1></div>
+</div><div class="slide" data-transition="none"><div class="content tdd/bdd" ref="conclusion/slide/3">
+<h1>TDD / BDD</h1></div>
+</div><div class="slide" data-transition="none"><div class="content read_codes" ref="conclusion/slide/4">
+<h1>Learn how to read codes</h1></div>
+</div><div class="slide" data-transition="none"><div class="content thanks" ref="conclusion/slide/5">
+<h1>Thanks</h1></div>
+</div></div>
+
+</body>
+</html>
