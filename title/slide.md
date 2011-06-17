@@ -3,7 +3,7 @@
 ### Samnang Chhun ###
 #### @samnangchhun ####
 
-<!SLIDE about_me>
+<!SLIDE about_me transition=fade>
 
 	@@@ ruby
     :about_me => {
