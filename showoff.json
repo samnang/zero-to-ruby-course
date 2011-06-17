@@ -1,0 +1,15 @@
+{
+    "name": "Zero to Ruby",
+    "sections": [
+        {"section": "title"},
+		{"section": "installation"},
+		{"section": "irb"},
+		{"section": "ruby_core"},
+		{"section": "classes_and_modules"},
+		{"section": "method_lookup"},
+		{"section": "duck_typing"},
+		{"section": "monkey_patching"},
+		{"section": "basic_metaprogramming_and_dsl"},
+		{"section": "conclusion"}
+    ]
+}

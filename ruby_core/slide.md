@@ -1,6 +1,8 @@
-!SLIDE ruby_core
+<!SLIDE ruby_core subsection>
 # Ruby Core #
-## Simplicity ##
+
+<!SLIDE Simplicity>
+# Simplicity #
 
 	@@@ ruby
     5.times { print "Ruby! "}
@@ -9,13 +11,12 @@
 	100.next
 	'a'.next
 	
-	3.hours.from_now
-	
 	1.upto(5) {|x| puts x }
 	5.downto(1) { |x| puts x }
-	
-## Almost everything in Ruby is an object	
 
+<!SLIDE everything_is_object>
+# Almost everything in Ruby is an object #
+	
 	@@@ ruby
     100.next     #=> 101
 	'a'.next     #=> "b"
@@ -30,8 +31,9 @@
 
 	5 + 5
 	5.+(5) # both are the same
-	
-## Array ##
+
+<!SLIDE array>	
+# Array #
 
 	@@@ ruby
     numbers = ['zero', 'one', 'two', 3]
@@ -45,7 +47,8 @@
 	list << 'bar'
 	list.pop # can be used as a stack
 
-## Hash ##
+<!SLIDE hash>
+# Hash #
 
 	@@@ ruby
     profile = {
@@ -56,7 +59,8 @@
 	profile[:name]
 	profile[:age]
 
-## Range ##
+<!SLIDE range>
+# Range #
 
     @@@ ruby
     range = 1..5
@@ -73,8 +77,9 @@
 	array = [1, 2, 3, 4]
 	array[0..2]       #=> [1, 2, 3]
 	array[1...-1]     #=> [2, 3]
-	
-## Conditionals and Iterators ##
+
+<!SLIDE conditional_and_iterators>	
+# Conditionals and Iterators #
 
     @@@ ruby
     if something_true?
@@ -89,3 +94,16 @@
 	%w{Ruby HTML5 CSS3}.each do |lang|
 	    puts "#{lang} is so cool!"
 	end
+	
+<!SLIDE ruby_core_and_stdlib bullets center>
+# Ruby package #
+.notes see some classes on both ruby core and standard library
+
+### Ruby Core Classes ###
+(String, Fixnum, Array, ...)
+### Ruby Standard Library ###
+(CSV, ERB, Webrick, ...)
+
+<!SLIDE exercise title>
+
+# Exercise #

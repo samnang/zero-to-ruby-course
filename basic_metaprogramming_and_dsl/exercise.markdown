@@ -42,3 +42,30 @@
 		student.name # => "Dara"
 		student.id  # => "1"
 		student.grade # => "D"
+		
+3. Write a XML Generator:  
+	Input:
+	
+		html do
+		  body do
+		    content "Let's start!"
+		    form :action => '/page', :method => 'post' do
+		      input :type => 'text', :name => 'str', :maxlength => 3, :size => 3
+		      input :type => 'submit', :value => 'page'
+		    end
+		  end
+		end
+		
+	Output:
+		
+		<html>
+		  <body>
+		    Let's start!
+		    <form action='/page' method='post'>
+		      <input type='text' maxlength='3' name='str' size='3'/>
+		      <input type='submit' value='page'/>
+		    </form>
+		  </body>
+		</html>
+	
+	Follow the steps from <https://github.com/ashbb/ruby_metaprogramming_study_note/blob/master/notes/XML_generator.md>

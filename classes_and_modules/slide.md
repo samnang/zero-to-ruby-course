@@ -1,5 +1,9 @@
-!SLIDE classes_and_modules
+<!SLIDE ruby_object_model subsection>
+# Ruby Object Model #
+
+<!SLIDE classes smaller>
 # Classes #
+
 	@@@ ruby
     class BankAccount
 	  attr_accessor :name, :account_no
@@ -25,6 +29,23 @@
 
 	account = BankAccount.new("Samnang")
 
+<!SLIDE inheritance>
+# Inheritance #
+	
+	@@@ ruby
+	class Animal
+	  # ...
+	end
+	
+	class Cat < Animal
+	  # ....
+	end
+	
+	class Dog < Animal
+	  # ...
+	end
+
+<!SLIDE mixins small>	
 # Mixins #
 
     @@@ ruby
@@ -48,7 +69,8 @@
 	obj = C.new
 	obj.say_hello
 	obj.say_goodbye
-	
+
+<!SLIDE namespace>	
 # Namespaces #
 
     @@@ ruby
@@ -66,8 +88,10 @@
 	
 	XML::Parser
 	PDF::Parser
-	
-# Singleton Methods
+
+<!SLIDE singleton_method smaller>	
+# Singleton Methods #
+
     @@@ ruby
 	animal = "cat"
 	another_aminal = "dog"
@@ -77,14 +101,27 @@
 	end
 	
 	an_array.speak # The cat says miaow
-	another_animal.speak # NoMethodError: undefined method `speak' for "dog":String
-	
-# Singleton classes/Eigenclasses/Metaclasses/Virtual Classes/Ghost classes
+	another_animal.speak 
+	# NoMethodError: undefined method `speak' for "dog":String
+
+<!SLIDE object_model center>
+# Object model for a basic class #
+
+![Object model for a basic class](object_model_for_a_basic_class.png)
+
+<!SLIDE singleton_class center>
+#Singleton class involved #
+
+![Singleton class](singleton_class.png)
+
+<!SLIDE what_is_single_class bullets center>
+.notes demo how to access singleton class in Ruby 1.8 and Ruby 1.9
+
+# Singleton classes #
+(Eigenclasses/Metaclasses/Virtual Classes/Ghost classes)
+
 * It's an anonymous class that you can't instantiate object from it
 * It's hidden
 * It is created automatically by the interpreter when you refer to it at the first time
 * Except from those above, it works like normal classes
   Picture of the singleton class
-
-
-

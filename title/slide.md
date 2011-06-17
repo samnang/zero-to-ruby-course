@@ -1,7 +1,10 @@
-!SLIDE title center
-# Zero To Ruby #
+<!SLIDE title center>
+# Zero to Ruby #
+### Samnang Chhun ###
+#### @samnangchhun ####
 
-!SLIDE about_be
+<!SLIDE about_me>
+
 	@@@ ruby
     :about_me => {
       :name => "Samnang Chhun",
@@ -18,23 +21,24 @@
       ]
     }
 
-!SLIDE try_ruby
+<!SLIDE try_ruby>
 # http://tryruby.org #
+.notes let students test with code snippets on http://tryruby.org
+
 	@@@ ruby
 	"I love Ruby" * 5
+	
 	5.times { puts "I love Ruby" }
-	[1, 3, "samnang"].last.captalize
+	
+	[1, 3, "samnang"].last.capitalize
 
-!SLIDE why_ruby
+<!SLIDE why_ruby bullets>
+
 # Why Ruby? #
+
 * Because Matz loves Ruby :-)
 * Dynamically typed language
 * An 100% OO language (well, 99.9%)
 * Concise. Simple. Fun!
 * Open source
 * Ruby makes developers have fun.
-
-
-
-
-
