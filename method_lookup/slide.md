@@ -1,4 +1,4 @@
-<!SLIDE self bullets>
+<!SLIDE self bullets transition=scrollUp>
 # self (current object) #
 
 * Read-only variable
@@ -6,12 +6,12 @@
   **self** controls how Ruby finds instance variables.  
   **self** plays a vital role in method calling.
 
-<!SLIDE method_lookup bullets>
+<!SLIDE method_lookup bullets transition=scrollUp>
 # Understanding Ruby's method lookup #
 * Find out what is **self** in current line of executing program
 * Ruby methods are looked up in the following order:
 
-<!SLIDE method_lookup_process bullets small>
+<!SLIDE method_lookup_process bullets small transition=scrollUp>
 # Ruby methods are looked up in the following order #
 * Methods defined in the object's singleton class (i.e. the object itself)
 * Modules mixed into the singleton class in reverse order of inclusion
@@ -19,5 +19,5 @@
 * Modules included into the object's class in reverse order of inclusion
 * Methods defined by the object's superclass.
 
-<!SLIDE example>
+<!SLIDE example transition=scrollUp>
 # Example #

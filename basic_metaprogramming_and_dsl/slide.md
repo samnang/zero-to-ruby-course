@@ -1,13 +1,13 @@
-<!SLIDE basic_metaprogramming_and_dsl subsection>
+<!SLIDE basic_metaprogramming_and_dsl subsection transition=scrollUp>
 # Basic metaprogramming and DSL #
 
-<!SLIDE metaprogramming bullets>
+<!SLIDE metaprogramming bullets transition=scrollUp>
 # Metaprogramming #
 
 * **Wikipedia**: "Metaprogramming is the writing of computer programs that write or manipulate other programs (or themselves) as their data, or that do part of the work at compile time that would otherwise be done at runtime."
 * Code that writes code.
 
-<!SLIDE metaprogramming_sample>
+<!SLIDE metaprogramming_sample transition=scrollUp>
 # Example #
 
 	@@@ ruby
@@ -15,7 +15,7 @@
 	  attr_accessor :name, :age
 	end
 
-<!SLIDE metaprogramming_sample1 small>
+<!SLIDE metaprogramming_sample1 small transition=scrollUp>
 # Getters and Setters from Java style #
 	
 	@@@ ruby
@@ -37,7 +37,7 @@
 	  end
 	end
 
-<!SLIDE metaprogramming_sample2 small>
+<!SLIDE metaprogramming_sample2 small transition=scrollUp>
 # Then change it into #
 	
 	@@@ ruby
@@ -54,7 +54,7 @@
 	end
 	
 
-<!SLIDE metaprogramming_sample3>
+<!SLIDE metaprogramming_sample3 transition=scrollUp>
 
 # Finally #
 
@@ -63,12 +63,12 @@
 	  attr_accessor :name, :age
 	end
 	
-<!SLIDE dsl center small>
+<!SLIDE dsl center small transition=scrollUp>
 # Domain Specific Language(DSL) #
 
 ## **Martin Fowler**: The basic idea of a domain specific language (DSL) is a computer language that's targeted to a particular kind of problem, rather than a general purpose language that's aimed at any kind of software problem. Domain specific languages have been talked about, and used for almost as long as computing has been done. ##
 
-<!SLIDE two_kinds_of_dsl>
+<!SLIDE two_kinds_of_dsl transition=scrollUp>
 # Two kinds of DSL #
 
 ## Internal DSL
@@ -77,7 +77,7 @@
 ## External DSL 
 ### have their own custom syntax and you write a full parser to process them. ###
 
-<!SLIDE internal_dsl bullets>
+<!SLIDE internal_dsl bullets transition=scrollUp>
 .notes demo some codes
 
 # Examples of internal DSL #
@@ -86,7 +86,7 @@
 * Sinatra
 * ...
 
-<!SLIDE external_dsl_bullets bullets>
+<!SLIDE external_dsl_bullets bullets transition=scrollUp>
 # Examples of external DSL #
 * Cucumber
 * Haml
@@ -94,5 +94,5 @@
 * CSS
 * ...
 
-<!SLIDE exercise>
+<!SLIDE exercise transition=scrollUp>
 # Exercise #

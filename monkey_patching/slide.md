@@ -1,4 +1,4 @@
-<!SLIDE monkey_patching bullets>
+<!SLIDE monkey_patching bullets transition=scrollUp>
 # Monkey Patching #
 
 * Objects and class are open:  
@@ -6,7 +6,7 @@
 * Might be dangerous or break some stuff:  
   but its awesome
 
-<!SLIDE monkey_patching small>
+<!SLIDE monkey_patching small transition=scrollUp>
 
 	@@@ ruby
 	class Array

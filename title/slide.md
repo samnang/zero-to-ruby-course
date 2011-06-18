@@ -3,7 +3,7 @@
 ### Samnang Chhun ###
 #### @samnangchhun ####
 
-<!SLIDE about_me transition=fade>
+<!SLIDE about_me transition=scrollUp>
 
 	@@@ ruby
     :about_me => {
@@ -21,7 +21,7 @@
       ]
     }
 
-<!SLIDE try_ruby>
+<!SLIDE try_ruby transition=scrollUp>
 # http://tryruby.org #
 .notes let students test with code snippets on http://tryruby.org
 
@@ -32,7 +32,7 @@
 	
 	[1, 3, "samnang"].last.capitalize
 
-<!SLIDE why_ruby bullets>
+<!SLIDE why_ruby bullets transition=scrollUp>
 
 # Why Ruby? #
 

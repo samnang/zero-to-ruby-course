@@ -1,4 +1,4 @@
-<!SLIDE ruby_implementations bullets>
+<!SLIDE ruby_implementations bullets transition=scrollUp>
 # Ruby Implementations #
 
 * MRI, YARV
@@ -8,7 +8,7 @@
 * MacRuby
 * etc.
 
-<!SLIDE installation bullets>
+<!SLIDE installation bullets transition=scrollUp>
 # Installation #
 ## Linux/MacOS X ##
 * [RVM](RVM: Ruby Version Manager - RVM Ruby Version Manager - Documentation)
@@ -16,7 +16,7 @@
 ## Windows ##
 * [RubyInstaller](http://rubyinstaller.org/), [RailsInstaller](http://railsinstaller.org/), [Pik](https://github.com/vertiginous/pik)
 
-<!SLIDE ruby_version commandline incremental small>
+<!SLIDE ruby_version commandline incremental small transition=scrollUp>
 # Ruby version #
 
 	$ ruby -v

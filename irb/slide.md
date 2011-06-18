@@ -1,4 +1,4 @@
-<!SLIDE irb commandline incremental>
+<!SLIDE irb commandline incremental transition=scrollUp>
 # Interactive Ruby Shell #
 
 	$ irb
@@ -6,7 +6,7 @@
 	I love Ruby!
 	 => nil
 	
-<!SLIDE test_codes_in_irb>
+<!SLIDE test_codes_in_irb transition=scrollUp>
 .notes let students test codes in irb
 
 	@@@ ruby
@@ -16,7 +16,7 @@
 	
 	[1, 3, "samnang"].last.capitalize
 
-<!SLIDE configure_irb bullets>
+<!SLIDE configure_irb bullets transition=scrollUp>
 # Configure and extend irb #
 
 * __.irbrc__ irb's configration
@@ -25,7 +25,7 @@
 * plugins or gems(looksee, interactive_editor, ...)
 * Customize by yourself
 
-<!SLIDE using_documentation bullets>
+<!SLIDE using_documentation bullets transition=scrollUp>
 # Using Ruby's documentation #
 * <http://rubydoc.info/stdlib>
 * <http://apidock.com/ruby/>

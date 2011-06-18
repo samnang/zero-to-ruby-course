@@ -1,7 +1,7 @@
-<!SLIDE ruby_core subsection>
+<!SLIDE ruby_core subsection transition=scrollUp>
 # Ruby Core #
 
-<!SLIDE Simplicity>
+<!SLIDE Simplicity transition=scrollUp>
 # Simplicity #
 
 	@@@ ruby
@@ -14,7 +14,7 @@
 	1.upto(5) {|x| puts x }
 	5.downto(1) { |x| puts x }
 
-<!SLIDE everything_is_object>
+<!SLIDE everything_is_object transition=scrollUp>
 # Almost everything in Ruby is an object #
 	
 	@@@ ruby
@@ -32,7 +32,7 @@
 	5 + 5
 	5.+(5) # both are the same
 
-<!SLIDE array>	
+<!SLIDE array transition=scrollUp>	
 # Array #
 
 	@@@ ruby
@@ -47,7 +47,7 @@
 	list << 'bar'
 	list.pop # can be used as a stack
 
-<!SLIDE hash>
+<!SLIDE hash transition=scrollUp>
 # Hash #
 
 	@@@ ruby
@@ -59,7 +59,7 @@
 	profile[:name]
 	profile[:age]
 
-<!SLIDE range>
+<!SLIDE range transition=scrollUp>
 # Range #
 
     @@@ ruby
@@ -78,7 +78,7 @@
 	array[0..2]       #=> [1, 2, 3]
 	array[1...-1]     #=> [2, 3]
 
-<!SLIDE conditional_and_iterators>	
+<!SLIDE conditional_and_iterators transition=scrollUp>	
 # Conditionals and Iterators #
 
     @@@ ruby
@@ -95,7 +95,7 @@
 	    puts "#{lang} is so cool!"
 	end
 	
-<!SLIDE ruby_core_and_stdlib bullets center>
+<!SLIDE ruby_core_and_stdlib bullets center transition=scrollUp>
 # Ruby package #
 .notes see some classes on both ruby core and standard library
 
@@ -104,6 +104,6 @@
 ### Ruby Standard Library ###
 (CSV, ERB, Webrick, ...)
 
-<!SLIDE exercise title>
+<!SLIDE exercise title transition=scrollUp>
 
 # Exercise #

@@ -1,7 +1,7 @@
-<!SLIDE ruby_object_model subsection>
+<!SLIDE ruby_object_model subsection transition=scrollUp>
 # Ruby Object Model #
 
-<!SLIDE classes smaller>
+<!SLIDE classes smaller transition=scrollUp>
 # Classes #
 
 	@@@ ruby
@@ -29,7 +29,7 @@
 
 	account = BankAccount.new("Samnang")
 
-<!SLIDE inheritance>
+<!SLIDE inheritance transition=scrollUp>
 # Inheritance #
 	
 	@@@ ruby
@@ -45,7 +45,7 @@
 	  # ...
 	end
 
-<!SLIDE mixins small>	
+<!SLIDE mixins small transition=scrollUp>	
 # Mixins #
 
     @@@ ruby
@@ -70,7 +70,7 @@
 	obj.say_hello
 	obj.say_goodbye
 
-<!SLIDE namespace>	
+<!SLIDE namespace transition=scrollUp>	
 # Namespaces #
 
     @@@ ruby
@@ -89,7 +89,7 @@
 	XML::Parser
 	PDF::Parser
 
-<!SLIDE singleton_method smaller>	
+<!SLIDE singleton_method smaller transition=scrollUp>	
 # Singleton Methods #
 
     @@@ ruby
@@ -104,17 +104,17 @@
 	another_animal.speak 
 	# NoMethodError: undefined method `speak' for "dog":String
 
-<!SLIDE object_model center>
+<!SLIDE object_model center transition=scrollUp>
 # Object model for a basic class #
 
 ![Object model for a basic class](object_model_for_a_basic_class.png)
 
-<!SLIDE singleton_class center>
+<!SLIDE singleton_class center transition=scrollUp>
 #Singleton class involved #
 
 ![Singleton class](singleton_class.png)
 
-<!SLIDE what_is_single_class bullets center>
+<!SLIDE what_is_single_class bullets center transition=scrollUp>
 .notes demo how to access singleton class in Ruby 1.8 and Ruby 1.9
 
 # Singleton classes #
