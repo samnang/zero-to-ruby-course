@@ -12,7 +12,7 @@
 <!SLIDE duck_typing_sample_code small transition=scrollUp>
 
 	@@@ ruby
-	class Dock
+	class Duck
 	  def quack
 		puts "Quack!"
 	  end

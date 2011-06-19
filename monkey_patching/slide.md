@@ -11,7 +11,7 @@
 	@@@ ruby
 	class Array
   	  def second
-	  	self[0]
+	  	self[1]
   	  end
 	end
 

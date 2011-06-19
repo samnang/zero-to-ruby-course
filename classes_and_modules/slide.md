@@ -124,4 +124,3 @@
 * It's hidden
 * It is created automatically by the interpreter when you refer to it at the first time
 * Except from those above, it works like normal classes
-  Picture of the singleton class
