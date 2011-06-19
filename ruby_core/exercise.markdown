@@ -6,12 +6,12 @@
  * Average score of each student?
  * Passed or failed students? 
  * The top score student?  
-`
-| Name | Subject 	 | Score |
-| Kety | Programming | 8	 |
-| Kety | Marketing	 | 3  	 |
-| Tom  | Programming | 7	 |
-| Tom  | Marketing	 | 2	 |
-| Mike | Programming | 7	 |
-| Mike | Marketing   | 5	 |
-`
+		`
+        | Name | Subject     | Score |
+        | Kety | Programming | 8     |
+        | Kety | Marketing   | 3     |
+        | Tom  | Programming | 7     |
+        | Tom  | Marketing   | 2     |
+        | Mike | Programming | 7     |
+        | Mike | Marketing   | 5     |
+		`
