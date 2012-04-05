@@ -100,7 +100,7 @@
 	  puts "The #{self} says miaow"
 	end
 	
-	an_array.speak # The cat says miaow
+	animal.speak # The cat says miaow
 	another_animal.speak 
 	# NoMethodError: undefined method `speak' for "dog":String
 
