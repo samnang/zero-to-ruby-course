@@ -1,5 +1,6 @@
 @media screen {
   body {
+			font-size: 100%;
       font-family: "Gill Sans", Helvetica, Arial, sans-serif;
       background:#333;
       overflow:hidden;
@@ -85,6 +86,21 @@
   }
 }
 
+/* plain (non-bullet) text */
+.content > p {
+	font-size: 2em;
+    margin: 1em;
+	text-align: center;
+}
+
+.content > pre {
+    font-size: 300%;
+}
+.content > blockquote {
+    font-size: 250%;
+    margin: 2em;
+}
+
 .center img {
     display:block;
     margin-left:auto;
@@ -99,21 +115,60 @@
   vertical-align: middle;
 }
 
-.bullets ul {
-    font-size: 3em;
+/* numbered lists are numbered */
+.content ol {
+    margin-left: 40px;
+	font-size: 3em;
+	text-align: left;
+	padding-left: 40px;
 }
-.bullets ul li {
+.content ol > li {
+    list-style: decimal;
+    display: list-item;
+}
+
+
+/* ironically, normal lists have bullets and 'bullets' lists don't */
+.content > ul {
+    list-style: disc;
+}
+.content > ul {
+	font-size: 3em;
+	text-align: left;
+	padding-left: 40px;
+}
+.content > ul > li {
+    padding: .5em;
+    margin-left: 40px;
+}
+
+/* ironically, normal lists have bullets and 'bullets' lists don't */
+.bullets > ul {
+    list-style: none;
+	font-size: 3em;
+	padding-left: 0px;
+}
+.bullets > ul > li {
     text-align: center;
     padding: 25px;
 }
-
-.smbullets ul {
-    font-size: 2em;
+.smbullets > ul {
+    font-size: 2.5em;
 }
-.smbullets ul li {
+.smbullets > ul > li {
     text-align: center;
     padding: 10px;
 }
+
+/* nested lists get their bullets back */
+.content ul ul {
+  list-style: disc;
+  margin: 10px 10px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.bullets ul ul > li { font-size: 80%; }
 
 .commandline pre {
     font-size: 2em;
@@ -138,9 +193,10 @@
     font-family: monospace;
 }
 
-.subsection {
+.subsection h1 {
     background: #008;
     color: #fff;
+	padding: .25em;
 }
 
 .small {
@@ -151,15 +207,12 @@
     font-size: 70%;
 }
 
-h1 { font-size: 5em; font-weight: normal; text-align: center;}
-h2 { font-size: 3em; font-weight: normal; text-align: center; }
-h3 { font-size: 2em; font-weight: normal; text-align: center; }
+h1,h2,h3 { font-weight: normal; text-align: center; margin: 0.5em 0; }
+h1 { font-size: 5em; }
+h2 { font-size: 3em; }
+h3 { font-size: 2em; }
 
-h1, h2, h3 {
-  margin: 0.5em 0;
-}
-
-pre { margin-left: 40px; font-size: 2.8em; }
+pre { margin: 1em 40px; padding: .25em; }
 
 .notes { display: none }
 .hidden { position:absolute; top:0; left:-9999px; width:1px; height:1px; overflow:hidden; }
@@ -195,11 +248,11 @@ a.fg-button { float:left; }
 
 .fg-button.ui-state-loading .ui-icon { background: url(spinner_bar.gif) no-repeat 0 0; }
 
-#navmenu { 
-  position: absolute; 
-  top: 10px; 
-  left: 10px; 
-  width: 50px; 
+#navmenu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
   z-index: 2147483647; /* max, see http://www.puidokas.com/max-z-index/ */
 }
 
